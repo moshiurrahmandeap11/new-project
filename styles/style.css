@@ -39,6 +39,12 @@
   outline: none;
 }
 
+.btn:hover{
+  background-color: transparent;
+  border: 1px solid green;
+  border-radius: 8px;
+}
+
 /* hero section */
 
 .hero {
@@ -84,6 +90,15 @@
   color: rgb(255, 255, 255);
   margin-bottom: 45px;
   cursor: pointer;
+  border-radius: 8px;
+}
+
+.hero-btn:hover{
+  background-color: transparent;
+  border: 1px solid green;
+  border-radius: 8px;
+  color: black;
+  transition: all ease-in-out 0.3s;
 }
 
 /* why web development */
@@ -217,6 +232,20 @@ iframe {
   color: rgb(13, 19, 33);
   margin-bottom: 8px;
 
+}
+
+.shared::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: green;
+  transition: width 0.3;
+}
+
+.shared:hover::after{
+  width: 50%;
+  transition: width 0.3s;
 }
 
 .shared-description{
@@ -366,6 +395,25 @@ iframe {
   font-weight: 600;
   font-size: 20px;
   line-height: 23px;
+}
+
+.last-title a{
+  text-decoration: none;
+  color: black;
+}
+
+.last-title a::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: green;
+  transition: width 0.3;
+}
+
+.last-title a:hover::after{
+  width: 100%;
+  transition: width 0.3s;
 }
 
 .last-icon img{
